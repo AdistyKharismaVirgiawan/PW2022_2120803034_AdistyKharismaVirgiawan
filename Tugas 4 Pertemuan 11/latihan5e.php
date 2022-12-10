@@ -1,29 +1,17 @@
-<?php 
-if (isset($_POST["submit"])) {
-
-
-  if($_POST["username"] == "admin" && $_POST["password"] == "123")  {
-
-    header ("Location: admin.php");
-    exit;
-  }  else {
-
-    $error =true;
-
-  }
-
+<?php
+if(isset($_POST["submit"])){
+  if($_POST["Username"] == "Admin" && $_POST["Password"] == "123"){
+        header("Location: admin.php");
+        exit;
+      } else{
+      $eror = true;
+    }  
 }
-
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
 </head>
 <style>
@@ -37,6 +25,7 @@ if (isset($_POST["submit"])) {
     border-radius: 0px 0px 0px 0px;
     text-align: center;
   }
+
   .header{
     position: absolute;
     width: 500px;
@@ -50,34 +39,32 @@ if (isset($_POST["submit"])) {
     font-weight: bold;
   }
 
-  
-
 </style>
 <body>
 <div class="container" >
   <div class="header">Login</div>
   <h1>Login</h1>
-
-  
   <ul>
-    <form action="" method="POST">
+  <form action="" method="post">
     <br>
-      <label for="username">Username  :</label>
-      <input type="text" name="username" id="username">
-</br>
+      <br>
+      <label for="Username">Username : </label>
+      <input type="text" name="Username" id="Username">
+    </br>
     <br>
-    <label for="password">Password   :</label>
-      <input type="password" name="password" id="password">
-</br>
-
-<?php if (isset ($error)) : ?>
-  <p style="color: red; font-style:italic; ">Username / Password salah!</p>
-  <?php endif; ?>
-  <br>
-    <button style="color: white;  font-weight:bold; background-color:blue;  border: 1px solid blue; position:relative; top: 30px; " type="submit" name="submit" >Log In</button>
-</br>
-</ul>
+      <label for="Password">Password : </label>
+      <input type="Password" name="Password" id="Password">
+    </br>
+    <?php if (isset($eror)) :?>
+    <p style="color: red; font-style:italic; text-align: bottom" >Username/Password salah!</p>
+    <?php endif;?>
+    <br>
+  <div>
+      <button style=" color:white; font-weight:bold; background-color: 
+      blue;" type="submit" name="submit" >Log in</button>
+    </div>
   </form>
-  
+  </ul>
+</div>
 </body>
 </html>
