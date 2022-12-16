@@ -1,0 +1,123 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+li {
+  margin-top: 45px;
+  text-align: 50px;
+  font-size: 25px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+  font: 16px/28px , Monospace;
+  background-color: orange;
+  color: black;
+  
+ 
+}
+
+.container {
+  background-color: #fff;
+  width: 770px;
+  margin: auto;
+  padding: 50px 50px;
+  margin-top: 80px ;
+ height: 550px;
+
+}
+
+.header {
+  font-size: 30px;
+ 
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: rgb(241, 90, 133);
+  color: black;
+  height: 50px;
+  padding-top: 50px;
+}
+
+.form label{
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+  color: #aca9a9;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.User {
+  width: 80px;
+  padding: 10px 10px;
+  background-color:  rgb(241, 90, 133);
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  float: right;
+}
+
+
+
+.gambar img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 3px white;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.submit a{
+  background-color: lightblue;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 20px 20px;
+  width: 120px;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 140px;
+}
